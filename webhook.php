@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 if($_SERVER['REQUEST_METHOD']!='POST'){
 	$links=array(
 		'https://www.youtube.com/channel/UCKdiEhba7eAdFWCr4eZLDTQ?sub_confirmation=1',
@@ -307,7 +307,7 @@ if(!in_array($cat,array(
 	3,
 	4,
 	13)))
-	(new mysqli('localhost','id152849_windows10','YourSQL','id152849_windows10'))->query("INSERT INTO `Informations` (`Content`,`Webhook`,`PlaceID`,`Category`,`IP`,`IsServer`) VALUES ('$contentSQL','$main',$id,$cat,'$ip',$is);");
+	(new mysqli('http://plumular-legend.000webhostapp.com','id152849_windows10','YourSQL','id152849_windows10'))->query("INSERT INTO `Informations` (`Content`,`Webhook`,`PlaceID`,`Category`,`IP`,`IsServer`) VALUES ('$contentSQL','$main',$id,$cat,'$ip',$is);");
 
 if($status)http_response_code($status);
 //echo$sS;
