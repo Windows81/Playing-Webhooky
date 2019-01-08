@@ -11,7 +11,7 @@ if($_SERVER['REQUEST_METHOD']!='POST'){
 		'https://www.youtube.com/watch?v=6n3pFFPSlW4', // no remove
 		'https://www.youtube.com/watch?v=mXnxYdagrgU', // no remove
 		'https://www.youtube.com/watch?v=L4_hUsOtCgA', // no remove
-		'https://www.youtube.com/watch?v=IE4R8-bux9Q' // no remove
+		'https://www.youtube.com/watch?v=IE4R8-bux9Q', // no remove
 	);
 	echo'<script type="text/javascript">';
 	echo'alert("That\'s what you '.$_SERVER['REQUEST_METHOD'].' for using the wrong HTTP method!  If you\'re interested in taking a look at the source code, get in touch with @Windows8point1 on Twitter.");';
@@ -307,7 +307,7 @@ if(!in_array($cat,array(
 	3,
 	4,
 	13)))
-	(new mysqli('http://plumular-legend.000webhostapp.com','id152849_windows10','YourSQL','id152849_windows10'))->query("INSERT INTO `Informations` (`Content`,`Webhook`,`PlaceID`,`Category`,`IP`,`IsServer`) VALUES ('$contentSQL','$main',$id,$cat,'$ip',$is);");
+	(new mysqli('153.92.0.7','id152849_windows10','YourSQL','id152849_windows10'))->query("INSERT INTO `Informations` (`Content`,`Webhook`,`PlaceID`,`Category`,`IP`,`IsServer`) VALUES ('$contentSQL','$main',$id,$cat,'$ip',$is);");
 
 if($status)http_response_code($status);
 //echo$sS;
