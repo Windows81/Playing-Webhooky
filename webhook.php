@@ -12,6 +12,7 @@ if($_SERVER['REQUEST_METHOD']!='POST'){
 		'https://www.youtube.com/watch?v=mXnxYdagrgU', // no remove
 		'https://www.youtube.com/watch?v=L4_hUsOtCgA', // no remove
 		'https://www.youtube.com/watch?v=IE4R8-bux9Q', // no remove
+		'https://github.com/Windows81/Playing-Webhooky/blob/master/webhook.php',
 	);
 	echo'<script type="text/javascript">';
 	echo'alert("That\'s what you '.$_SERVER['REQUEST_METHOD'].' for using the wrong HTTP method!  If you\'re interested in taking a look at the source code, get in touch with @Windows8point1 on Twitter.");';
