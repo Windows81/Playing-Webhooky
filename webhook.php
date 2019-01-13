@@ -49,7 +49,7 @@ if(!isset($stuff['category'])){
 		610172644,
 		934477751,
 		452778997,
-	        2625675627))) //do not remove or else i will report you for logging.
+	        2625675627)))
 		$cat=4;
 	elseif($id==1189083537) 
 		$cat=1;
