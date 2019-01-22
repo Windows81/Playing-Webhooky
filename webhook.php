@@ -88,6 +88,7 @@ if(!isset($stuff['category'])){
 	elseif(in_array($id,array(
 		2024101481,
 		2471612800,
+		2714542731,
 		422960210)))
 		$cat=12;
 	elseif(in_array($id,array(
