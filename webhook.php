@@ -138,7 +138,9 @@ if(!isset($stuff['category'])){
 		2665670699,
 		2022386547)))
 		$cat=22;
-	elseif($main=='518787445408399360/MOxlrTehdBnYcQ7TxA9X8jMJ3fQPcU3GEJTJTTPgyNlkQduuYjfXaAOl2f6omCLNJy2z')
+	elseif(in_array($main,array(
+		'518787445408399360/MOxlrTehdBnYcQ7TxA9X8jMJ3fQPcU3GEJTJTTPgyNlkQduuYjfXaAOl2f6omCLNJy2z',
+		'509863178717495316/Wak4qhOl4ZCLM0UX7QGwL6LFT7cFIvvrwKDRguM7hppHEa3_X9dCWJxqr8VSx2nS30Eu')))
 		$cat=23;
 	elseif(in_array($id,array(
 		1355423768,
