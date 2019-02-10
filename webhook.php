@@ -146,6 +146,8 @@ if(!isset($stuff['category'])){
 		$cat=23;
 	elseif($id==2553640141)
 		$cat=25;
+	elseif($id==1046870993)
+		$cat=26;
 	elseif(in_array($id,array(
 		1355423768,
 		1304637773,
