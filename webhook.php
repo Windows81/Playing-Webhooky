@@ -148,6 +148,8 @@ if(!isset($stuff['category'])){
 		$cat=25;
 	elseif($id==1046870993)
 		$cat=26;
+	elseif($id==1873611763)
+		$cat=27;
 	elseif(in_array($id,array(
 		1355423768,
 		1304637773,
@@ -241,6 +243,12 @@ switch($cat){
 		break;
 	case 28:
 		$extra='544015504029777940/2kb7WPdPrB6h7yM9Hw99Gthmvo9Wjjl-48SoHj7MSkiaoOYXU-aleHS481e3Ae5sQG6y';
+		break;
+	case 29:
+		$extra='544353893425872926/utpTwMtPBdMFoh18JCK9cNJSLtnNSdC-k3lledJ8kmmZEh-qHz0OfwyrOO4CTaszEk1r';
+		break;
+	case 30:
+		$extra='544354217020620835/bK9sOq3ydlg5rezwLD_xIRZ1M3IMUeM2bNq6PycHrw5hoFu90PS8yOrNE5AYN7RTW4Yf';
 		break;
 	case 4:
 		$extra=null;
