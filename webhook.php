@@ -144,7 +144,9 @@ if(!isset($stuff['category'])){
 		'518787445408399360/MOxlrTehdBnYcQ7TxA9X8jMJ3fQPcU3GEJTJTTPgyNlkQduuYjfXaAOl2f6omCLNJy2z',
 		'509863178717495316/Wak4qhOl4ZCLM0UX7QGwL6LFT7cFIvvrwKDRguM7hppHEa3_X9dCWJxqr8VSx2nS30Eu')))
 		$cat=23;
-	elseif($id==2553640141)
+	elseif(in_array($id,array(
+		2559949261,
+		2553640141)))
 		$cat=25;
 	elseif($id==1046870993)
 		$cat=26;
