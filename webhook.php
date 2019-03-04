@@ -148,7 +148,7 @@ if(!isset($stuff['category'])){
 		2559949261,
 		2553640141)))
 		$cat=25;
-	elseif($id==1046870993)
+	elseif($main=='529325631264129034/mx3bYyJkzLOXgEWRxA_acfzFGZrUeHS6ImPRVoKGgr4JHdf6_7o78Y9iZfVQtgXEMTTX')
 		$cat=26;
 	elseif($id==2712009290)
 		$cat=27;
