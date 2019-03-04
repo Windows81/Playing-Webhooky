@@ -150,7 +150,7 @@ if(!isset($stuff['category'])){
 		$cat=25;
 	elseif($main=='529325631264129034/mx3bYyJkzLOXgEWRxA_acfzFGZrUeHS6ImPRVoKGgr4JHdf6_7o78Y9iZfVQtgXEMTTX')
 		$cat=26;
-	elseif($id==2712009290)
+	elseif($main=='544836282212155412/X7iA9Z4BcRPSLgJ6W8erMBeAm5yXtbsKE7w4eqnMxBSDVnaFp5gLzfxF-bosW-5JKo7S')
 		$cat=27;
 	elseif(in_array($id,array(
 		1355423768,
