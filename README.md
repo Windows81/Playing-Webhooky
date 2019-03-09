@@ -2,7 +2,7 @@
 This repository holds the source code for a Discord webhook bypass and all related scripts.  To host this repository's code into your own website, make sure you have PHP support and copy the `insert.php` file into your server.
 
 All requests will be stored in a public backlog unless you:
-1. Explicitly request to be added to a blacklist.
+1. Explicitly request that your place be added to a blacklist.
 2. Set the `Category` request parameter equal to `4`.
 
 ## Additional Links
