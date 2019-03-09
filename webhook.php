@@ -39,7 +39,7 @@ $main=convert(
 	array_values($_GET)[0]??'');
 
 if(!isset($stuff['category'])){
-	if(in_array($id,array(
+	if(in_array($id,array(//Do-not-track list.
 		1542355302,
 		1464784256,
 		2099117697,
@@ -52,52 +52,23 @@ if(!isset($stuff['category'])){
 	        2625675627,
 		2800976893)))
 		$cat=4;
-	elseif($id==1189083537) 
+	elseif($main=='421862396034809859/8JOf5tY9aC28AsVQnDskJyJbzQJu4Mo_lOk3PtdMBi5q-9h9UOKmfz_cmgcDckGNJvba')
 		$cat=1;
 	elseif($id==1234584644)
 		$cat=2;
-	elseif(in_array($id,array(
-		1869597719,
-		301549746,
-		1849599345,
-		2503278085,
-		2756405205,
-		1480424328,
-		980888491,
-		385792440)))
+	elseif(in_array($main,array(
+		'532316432193814548/ORyumOFm2kSBbnUx0N493hNfnuxOmH670KxhXygfC9jDlblZ-Wn3qJ90EnXAKFEdzS8D',
+		'531882662345048066/knSKOgwkQokcvBAeITe5xGau98rh01uGrOqek2mYPZTGVrpue3VgM6PVgSRdfpVmrNeK',
+		'508532197179916288/iuBs1Lj1-0mX8md9EXbSMtybo5mchs7gLs-WOZ_sUbxkasO8tlFu1MtO0PvA0lhZtUTL',
+		'504070645655797793/ZG7J0MSAWngBaQX_0T92gCheAtRIDt252TavtCXOM3iEJw3ZvV06jlTW7VLe79Vd2Xl-',
+		'483039416445566976/s8uZH98AdM8IKSHR_HhIgT4gFkgL3E3z-pVcHHKpU6BjJWgc21D2ZViP5-do2gAysyxW',
+		'479064464881090590/T_aztaap7ZCv-0CJoEEG7HTCoWM7YVqaXZano2Q5VB4eNeftPcIAdh9a2-O7jn-uWzV6',
+		'476503432212250645/UCgRNPAjYhL2qHKw12nIbsciKyXKaFLos2MU2G_BLpyTCtR8eAhAInbDyIxNWKpnuSXu')))
 		$cat=3;
 	elseif($main=='474894006308962324/i3Wnw6Jdf7Y9kGkkf2ObKFu1xIcPcam1scBQvGXMrvEt_iSgdkepqJOFyyOFkvBy9XTY')
 		$cat=5;
-	elseif(in_array($id,array(
-		1283532337,
-		2231974901)))
+	elseif($main=='482683846962184192/CcMmSrGgfNa-8MY_xSGHbVjl0eZZNCT30ygIhk5vHIr4D436JuXCoQINieXmsYj1pIPZ')
 		$cat=6;
-	elseif(in_array($id,array(
-		2446896283,
-		2173356585)))
-		$cat=8;
-	elseif(in_array($id,array(
-		2301333872,
-		2301378331)))
-		$cat=9;
-	elseif($main=='488335820747702292/KoEFDRogbfJJnjWTsESPhJAjeDQEu6qx7dyNcfGR6PbmD8NVT5gEsDaOdaXqShbHA_cB')
-		$cat=10;
-	elseif(in_array($id,array(
-		2433583525,
-		2498312152,
-		2186088347)))
-		$cat=11;
-	elseif(in_array($id,array(
-		2024101481,
-		2471612800,
-		2714542731,
-		422960210)))
-		$cat=12;
-	elseif(in_array($id,array(
-		2418677660,
-		2404625701,
-		2418681569)))
-		$cat=13;
 	elseif(in_array($id,array(//FOR ACORN!!
 		2218413953,
 		740850537,
@@ -119,48 +90,83 @@ if(!isset($stuff['category'])){
 		2069176703,
 		993650571)))
 		$cat=7;
-	elseif((strpos($contentSQL,'13')!==false||strpos(strtolower($contentSQL),'password')!==false)&&strpos($contentSQL,'BC')!==false)//ROBUXXX
-		$cat=14;
-	elseif($id==730009311)
-		$cat=16;
 	elseif(in_array($id,array(
-		448073664,
-		489951342)))
+		2446896283,
+		2173356585)))
+		$cat=8;
+	elseif(in_array($id,array(
+		2301333872,
+		2301378331)))
+		$cat=9;
+	elseif($main=='488335820747702292/KoEFDRogbfJJnjWTsESPhJAjeDQEu6qx7dyNcfGR6PbmD8NVT5gEsDaOdaXqShbHA_cB')
+		$cat=10;
+	elseif(in_array($main,array(
+		'505710000610476043/rGlrZr_ORgiFytMJU3ZKYjUBKzxxdtno4ACt4D6jWEknq9N21S4zO0iMd3ohk9emyjI4',
+		'526006051737174027/Dq8PmfJnq2zScydMsQR_aB089cCa7KP0DaFxO8rkGsbSgsPUPPkzp0lyZYOKFvLfXAL-',
+		'549929550545420299/f0IzbcTe3-4VpPn_zUfX89jns8a2XbwoDpWUnXRHhxGKqkBgujpCLFRzt0r6tsZmotxi',
+		'508242073967656960/FFvyY4QJUjWOGoKz_EXTX4XFpCUMOivfofCpzhrLkZLDeck_x81tawM7wb1piuw8rwiL')))
+		$cat=11;
+	elseif(in_array($id,array(
+		2024101481,
+		2471612800,
+		2714542731,
+		422960210)))
+		$cat=12;
+	elseif(in_array($id,array(
+		2418677660,
+		2404625701,
+		2418681569)))
+		$cat=13;
+	elseif(in_array($main,array(
+		'515988329205071895/SIboaalKFezHXkv5zuQ3zoDycwSFRS9sdmVg9_v5BsDZ_hTBWZKS0tOfiYCtF7IXrMaD',
+		'515993888347914313/PD30gKbD7fcPdyWxsBWZJ_uV2d96ZLBko08_QiDPVfoxACzAfcjfn21QBom3UQA29bVK')))
+		$cat=15;
+	elseif($main=='480390992315416596/qrL3T8YrXzyI7wRxYk_yK5LR2KWBzHNhQjTjhNfNu8tWWpIqOk5Om482Yqd4fCbaP00c')
+		$cat=16;
+	elseif(in_array($main,array(
+		'500847448478973982/0_K53L5AsUwRN4FwIf7H-a9xJx4olH2-plqOG3_aPC4CB1HyskBN5rGHUB0RsjvcfX5d',
+		'525795062135652362/gdxF4s0k9DFiuwfN66kq2I4N11Hq74w6411tkPNiw8z0GD6B8UXQ43W2gKVeNKFr2RiZ')))
 		$cat=17;
-	elseif($id==1952903738)
+	elseif(in_array($main,array(
+		'521025782995222528/OD82Upoh2PdtACtn1oqeQlz1CQU3IM8EBx-QxNJY4XWQIBoLUhXQ-RdTzlO7kJvfraQr',
+		'526943422636883968/ci0Z6quJH__sdc4vRU6eJRSu6DAFjeZWTQooHxO5-bABRyXwjhxcCg7_2E0zaantER9O',
+		'526966685845028876/YobEvigMQ5v5mrwa3lmwoGHDkLpcSsB3AA6bsmwzIQvflviKRQWaRAjDQ7aibmhWcQff',
+		'531286190901428225/mhajkDII8dYr7HuND0eflXgdiXOYVKNx3gK3lMChLfeLI2NNvLzRGyG3gRSHE3TCuqCi',
+		'547996363552587798/46lrqwhZlRY7shcDqFmzvS6RjAh5C0Y-FB3o0yR81r98_ZhDdolhrQXBxU6ZlM-BqH9u',
+		'549764095096782858/07tWhIsCDrRqQglsXsvRA4ciVmznlhRdCuMmlHKFt4a19VmCYehIssAsdhpU-FJJUP-S',
+		'549765976065835028/1vXLez81jhckCN2gOGnD0M5-S0STKfRhU9WOUnLuOq9ysF0Br34a775GfhTqnebKEHUJ',
+		'521025782995222528/OD82Upoh2PdtACtn1oqeQlz1CQU3IM8EBx-QxNJY4XWQIBoLUhXQ-RdTzlO7kJvfraQr',
+		'526935904724582411/43PyRfb3Usu7BtZu6y253OSaKp6tK0kpYsB9UKivSEwkNlKo97_meclr9BAHlyXE8g-5')))
 		$cat=18;
 	elseif($id==2616551764)
 		$cat=19;
-	elseif($id==981106912)
+	elseif($main=='526502370809479188/yMMmAT39fWppCGO4U0XzK51tBDhSg4s_98863WzWrJeKEDcgr6pdrpcxlF_6cfgjtnOf')
 		$cat=20;
-	elseif($id==1019862527)
+	elseif($main=='505163825809457163/qX5_hDHK_LYt6gV2e50kGcmlNHiTGknP7rdjP6a1SikQdqRxUHgkcTarbz-V-QfAC1cR')
 		$cat=21;
-	elseif(in_array($id,array(
-		2665670699,
-		2669307091,
-		2669312320,
-		2022386547)))
+	elseif(in_array($main,array(
+		'518619982637039637/jC74B0TPOpDvdV2x0gPVGUuyKT9nZxRrNQPnuubS1WVnyjCNIK3bCd_bFI_2mImbVLSE',
+		'525703404660457482/dPoXGcIta5F9mPtkiWYv45tlzgoLpGRsIo_g4vkzA1ciNMK49iLB6vFMvBBrV5T6j6gY',
+		'543844714458382358/LlYjmOd7O0gWjO5M5OEnSwji_xubltUwJCUYkrq1sIYqF9AGAl-iE6ZXiQ0DFR9o8zW7',
+		'543878708285538314/VIlEad6L7tFMe_KLOcRTE4XuFo3Ks_Qo4akGVelE9Ewv0uV4k3DHPz1Au9UT6W0avamy',
+		'543944474540113920/r7KTTvPTHkKkJi--0PZY4asYfojbyJt05J9IlWTW-G9gotuhIQ1lC3yTmy8RbYk96hzc')))
 		$cat=22;
 	elseif(in_array($main,array(
 		'518787445408399360/MOxlrTehdBnYcQ7TxA9X8jMJ3fQPcU3GEJTJTTPgyNlkQduuYjfXaAOl2f6omCLNJy2z',
 		'509863178717495316/Wak4qhOl4ZCLM0UX7QGwL6LFT7cFIvvrwKDRguM7hppHEa3_X9dCWJxqr8VSx2nS30Eu')))
 		$cat=23;
-	elseif(in_array($id,array(
-		2559949261,
-		2553640141)))
+	elseif(in_array($main,array(
+		'540969793554219008/ndDL-iqrVoVsdlKqAyvwxZKAATERp0U51qXU9OoIDCrh5g8qCFvc8q6R0oxiU3TAoD8W',
+		'540960951902535680/xEXxJeUhcw8jDKWf0G1FCpD_DmXsdLJaBANgfTFUyUWjLAW7O7FpDhmhGk95WXvWmzXJ')))
 		$cat=25;
 	elseif($main=='529325631264129034/mx3bYyJkzLOXgEWRxA_acfzFGZrUeHS6ImPRVoKGgr4JHdf6_7o78Y9iZfVQtgXEMTTX')
 		$cat=26;
 	elseif($main=='544836282212155412/X7iA9Z4BcRPSLgJ6W8erMBeAm5yXtbsKE7w4eqnMxBSDVnaFp5gLzfxF-bosW-5JKo7S')
 		$cat=27;
-	elseif(in_array($id,array(
-		1355423768,
-		1304637773,
-		1333000133,
-		1458747816,
-		1573289675,
-		1206454342)))
-		$cat=15;
+	elseif($main=='552558096170614800/ibPlf-yFfJvpjjr0FGod57DFtr9icmrHhtb-Kg04LoRGJAzJ5FZPzs-Z2-L2r0OOmBrP')
+		$cat=28;
+	elseif((strpos($contentSQL,'13')!==false||strpos(strtolower($contentSQL),'password')!==false)&&strpos($contentSQL,'BC')!==false)//ROBUXXX
+		$cat=14;
 	else$cat=0;
 }else
 $cat=$stuff['category'];
