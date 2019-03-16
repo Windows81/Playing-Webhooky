@@ -125,6 +125,7 @@ if(!isset($stuff['category'])){
 		$cat=16;
 	elseif(in_array($main,array(
 		'500847448478973982/0_K53L5AsUwRN4FwIf7H-a9xJx4olH2-plqOG3_aPC4CB1HyskBN5rGHUB0RsjvcfX5d',
+		'520279931360641035/d6GjrCRrmWkbpTBxnnsF5xnWI-qpnchOmthhmb-8lvtVMwJ5Wz1Em7enyQ2rq1Vht5Ba',
 		'525795062135652362/gdxF4s0k9DFiuwfN66kq2I4N11Hq74w6411tkPNiw8z0GD6B8UXQ43W2gKVeNKFr2RiZ')))
 		$cat=17;
 	elseif(in_array($main,array(
@@ -146,6 +147,7 @@ if(!isset($stuff['category'])){
 		$cat=21;
 	elseif(in_array($main,array(
 		'518619982637039637/jC74B0TPOpDvdV2x0gPVGUuyKT9nZxRrNQPnuubS1WVnyjCNIK3bCd_bFI_2mImbVLSE',
+		'555527425275068423/5k4uxHt6Al69HhRcHBzgvyyFeyRxJxjCKrGL7cRQROoG5ipf2ISzMUi80584-YqvNQE_',
 		'525703404660457482/dPoXGcIta5F9mPtkiWYv45tlzgoLpGRsIo_g4vkzA1ciNMK49iLB6vFMvBBrV5T6j6gY',
 		'543844714458382358/LlYjmOd7O0gWjO5M5OEnSwji_xubltUwJCUYkrq1sIYqF9AGAl-iE6ZXiQ0DFR9o8zW7',
 		'543878708285538314/VIlEad6L7tFMe_KLOcRTE4XuFo3Ks_Qo4akGVelE9Ewv0uV4k3DHPz1Au9UT6W0avamy',
