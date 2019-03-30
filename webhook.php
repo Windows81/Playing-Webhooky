@@ -28,10 +28,8 @@ $ip=$_SERVER['REMOTE_ADDR'];
 $ua=$_SERVER['HTTP_USER_AGENT'];
 $is=$ua==='Roblox/WinInet'?1:0;
 
-if(isset($stuff['embeds']))
-	$contentSQL=json_encode($stuff['embeds']);//'Embedded';
-else
-	$contentSQL=$stuff['content'];
+if(isset($stuff['embeds']))$contentSQL=json_encode($stuff['embeds']);else$contentSQL=$stuff['content'];
+$contentSQL=preg_replace('/([^`]|^)[`]([^`]|$)/','$1``$2',preg_replace('/([^`])[`]([^`])/','$1``$2',$contentSQL));
 
 $main=convert(
 	$stuff['url']??
