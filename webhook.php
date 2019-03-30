@@ -368,7 +368,7 @@ function curlIt($url,$body){
 foreach($hookies as $i=>$url)$status=curlIt($url,$stuff);
 $db=!in_array($cat,array(4,13));if($cat==3&&strpos($contentSQL,'Sanity Check')===false)$db=true;
 if($db)(new mysqli('localhost','id152849_windows10','YourSQL','id152849_windows10'))->query("INSERT INTO `Informations` (`Content`,`Webhook`,`PlaceID`,`Category`,`IP`,`IsServer`) VALUES ('$contentSQL','$main',$id,$cat,'$ip',$is);");
-curlIt($extra,array('content'=>$id.' '.$main.' '.$db?'true':false'));
+curlIt($extra,array('content'=>$id.' '.$main.' '.$db?'true':'false'));
 
 if($status)http_response_code($status);
 //echo$sS;
