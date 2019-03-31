@@ -370,7 +370,9 @@ function curlIt($url,$body){
 }
 
 foreach($hookies as $i=>$url)$status=curlIt($url,$stuff);
-$db=!in_array($cat,array(4,13));if($cat==3&&strpos($contentSQL,'Sanity Check')===false)$db=true;
+$db=!in_array($cat,array(4,13));
+if($cat==3&&strpos($contentSQL,'Sanity Check')!==false)$db=false;
+if($cat==33&&strpos($contentSQL,'Player Joined')===false)$db=false;
 if($db)($sqli=new mysqli('localhost','id152849_windows10','YourSQL','id152849_windows10'))->query("INSERT INTO `Informations` (`Content`,`Webhook`,`PlaceID`,`Category`,`IP`,`IsServer`) VALUES ('$contentSQL','$main',$id,$cat,'$ip',$is);");
 
 if($status)http_response_code($status);
