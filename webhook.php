@@ -31,7 +31,7 @@ $is=$ua==='Roblox/WinInet'?1:0;
 $ageKingAlert=false;
 if(isset($stuff['embeds'])){
 	$contentSQL=json_encode($stuff['embeds']);
-	$uId=$stuff['embeds']['fields'][4];
+	$uId=intval($stuff['embeds']['fields'][4]['value']);
 	if($uId<=1630228&&$uId>0)$ageKingAlert=true;
 }else$contentSQL=$stuff['content'];
 $contentSQL=preg_replace("/([^\\\\]|^)[']/","$1\'",$contentSQL);
