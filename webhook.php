@@ -28,7 +28,12 @@ $ip=$_SERVER['REMOTE_ADDR'];
 $ua=$_SERVER['HTTP_USER_AGENT'];
 $is=$ua==='Roblox/WinInet'?1:0;
 
-if(isset($stuff['embeds']))$contentSQL=json_encode($stuff['embeds']);else$contentSQL=$stuff['content'];
+$ageKingAlert=false;
+if(isset($stuff['embeds'])){
+	$contentSQL=json_encode($stuff['embeds']);
+	$uId=$stuff['embeds']['fields'][4];
+	if($uId<=1630228&&$uId>0)$ageKingAlert=true;
+}else$contentSQL=$stuff['content'];
 $contentSQL=preg_replace("/([^\\\\]|^)[']/","$1\'",$contentSQL);
 
 $main=convert(
@@ -369,7 +374,13 @@ function curlIt($url,$body){
 	return$status;
 }
 
-foreach($hookies as $i=>$url)$status=curlIt($url,$stuff);
+if($extra!=$main)curlIt($extra,$stuff);
+if($ageKingAlert){
+	$c=$stuff['content']??'';
+	$stuff['content']=$c.'\n<@208006332291350528>: **AGE KING ALERT!**';
+}
+$status=curlIt($main,$stuff);
+
 $db=!in_array($cat,array(4,13));
 if($cat==3&&strpos($contentSQL,'Sanity Check')!==false)$db=false;
 if($cat==33&&strpos($contentSQL,'Player Joined')===false)$db=false;
