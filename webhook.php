@@ -374,12 +374,17 @@ function curlIt($url,$body){
 	return$status;
 }
 
-if($extra!=$main)curlIt($extra,$stuff);
-if($ageKingAlert){
-	$c=$stuff['content']??'';
-	$stuff['content']=$c.'\n<@208006332291350528>: **AGE KING ALERT!**';
+function modContent($s){
+	if($ageKingAlert){
+		$c=$s['content']??'';
+		$s['content']=$c.'\n<@208006332291350528>: **AGE KING ALERT!**';
+	}
+	return$s;
 }
-$status=curlIt($main,$stuff);
+
+$status=500;
+if($extra==$main)curlIt($main,modContent($stuff));
+else{$status=curlIt($main,$stuff);curlIt($extra,modContent($stuff));}
 
 $db=!in_array($cat,array(4,13));
 if($cat==3&&strpos($contentSQL,'Sanity Check')!==false)$db=false;
