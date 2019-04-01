@@ -383,7 +383,8 @@ function modContent($s){
 }
 
 $status=500;
-if($extra==$main)curlIt($main,modContent($stuff));
+if($extra==$main)$status=curlIt($main,modContent($stuff));
+elseif($main==false)$status=curlIt($extra,modContent($stuff));
 else{$status=curlIt($main,$stuff);curlIt($extra,modContent($stuff));}
 
 $db=!in_array($cat,array(4,13));
