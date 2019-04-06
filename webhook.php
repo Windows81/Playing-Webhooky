@@ -184,7 +184,9 @@ if(!isset($stuff['category'])){
 		$cat=32;
 	elseif($main=='561559161566134292/bddfTBnnjuQ6NiPVZCNfe3TnOywJ3vPQJH9JPym6wQK2FF5FkAjclWcBL1HMwox_RGTT')
 		$cat=33;
-	elseif($main=='562440591183577088/BpM2PgeoGVKEdcLH1IJyMyMyhHcm_x9JU2v0yivV8lntmD3HcIFrl460r0daZ9p4F9_4')
+	elseif(in_array($main,array(
+		'562290903654334494/QJqyIMC47Zu-mtsDxz2wkapZlqVixBm7SjhaNhdCiNjWxBnCys2H93sTxvQPEhcKmxQT',
+		'562440591183577088/BpM2PgeoGVKEdcLH1IJyMyMyhHcm_x9JU2v0yivV8lntmD3HcIFrl460r0daZ9p4F9_4')))
 		$cat=34;
 	elseif($main=='563724553935912960/sUIPf7pL43YincWuXyAV4iu7S9GhoxxTqKTfyznicEPFf5QwFTtar_NnzXgpY9szhrbE')
 		$cat=35;
