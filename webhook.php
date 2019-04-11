@@ -52,7 +52,6 @@ if(!isset($stuff['category'])){
 		610172644,
 		934477751,
 		452778997,
-	        2625675627,
 		2800976893)))
 		$cat=4;
 	elseif($main=='421862396034809859/8JOf5tY9aC28AsVQnDskJyJbzQJu4Mo_lOk3PtdMBi5q-9h9UOKmfz_cmgcDckGNJvba')
