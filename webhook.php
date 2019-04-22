@@ -170,7 +170,9 @@ if(!isset($stuff['category'])){
 		$cat=26;
 	elseif($main=='544836282212155412/X7iA9Z4BcRPSLgJ6W8erMBeAm5yXtbsKE7w4eqnMxBSDVnaFp5gLzfxF-bosW-5JKo7S')
 		$cat=27;
-	elseif($main=='552558096170614800/ibPlf-yFfJvpjjr0FGod57DFtr9icmrHhtb-Kg04LoRGJAzJ5FZPzs-Z2-L2r0OOmBrP')
+	elseif(in_array($main,array(
+		'552557789512204318/UbKp2K0UdzPjihIhLlmL6DPJSQ22Y_UQEYjmcQZ5YF6WHss-dapCeuVB0LY90-tZSn9T',
+		'552558096170614800/ibPlf-yFfJvpjjr0FGod57DFtr9icmrHhtb-Kg04LoRGJAzJ5FZPzs-Z2-L2r0OOmBrP')))
 		$cat=28;
 	elseif($main=='500530456228397059/YkfHQWa_t_hXz3gaXn8s5WleagVamdbS6Vkt4RZmGwLdGm7cfS-G6yEGhcU74jyX5NxF')
 		$cat=29;
