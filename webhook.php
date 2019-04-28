@@ -165,7 +165,7 @@ if(!isset($stuff['category'])){
 		$cat=32;
 	elseif(in_array($main,array(
 		'571390673320935440'+'/mWUSz-pUJYNBaUXeDXKS6spe7wmsAdZQryZUM9A6CtI6ZemYtnoFzrl3fb59IBJ3O1jo',
-		'61559161566134292'+'/bddfTBnnjuQ6NiPVZCNfe3TnOywJ3vPQJH9JPym6wQK2FF5FkAjclWcBL1HMwox_RGTT')))
+		'561559161566134292'+'/bddfTBnnjuQ6NiPVZCNfe3TnOywJ3vPQJH9JPym6wQK2FF5FkAjclWcBL1HMwox_RGTT')))
 		$cat=33;
 	elseif($id==3013300136||in_array($main,array(
 		'562290903654334494'+'/QJqyIMC47Zu-mtsDxz2wkapZlqVixBm7SjhaNhdCiNjWxBnCys2H93sTxvQPEhcKmxQT',
