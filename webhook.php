@@ -1,18 +1,7 @@
 <?php
 if($_SERVER['REQUEST_METHOD']!='POST'){
 	$links=array(
-		'https://www.youtube.com/channel/UCKdiEhba7eAdFWCr4eZLDTQ?sub_confirmation=1',
-		'https://roblox.com/games/1189083537/OV',
-		'http://le-blog.webutu.com/D%C9%99t%C9%99b%C3%A4se.php?le=WHERE%20Category=0%20ORDER%20BY%20Timestamp%20DESC%20LIMIT%200,%20666',
-		'http://twitter.com/windows8point1',
-		'https://www.youtube.com/watch?v=TiHbWtI8ShA',
-		'https://www.youtube.com/watch?v=X8ZuIrq3190',
-		'https://soundcloud.com/aaaroh-abo-shadi',
-		'https://www.youtube.com/watch?v=6n3pFFPSlW4', // how dare you comment out this you broke webhooky!
-		'https://www.youtube.com/watch?v=mXnxYdagrgU', // no remove
-		'https://www.youtube.com/watch?v=L4_hUsOtCgA', // no remove
-		'https://www.youtube.com/watch?v=IE4R8-bux9Q', // no remove
-		'https://github.com/Windows81/Playing-Webhooky/blob/master/webhook.php',
+		'https://github.com/Windows81/Playing-Webhooky',
 	);
 	echo'<script type="text/javascript">';
 	echo'alert("That\'s what you '.$_SERVER['REQUEST_METHOD'].' for using the wrong HTTP method!  If you\'re interested in taking a look at the source code, get in touch with @Windows8point1 on Twitter.");';
