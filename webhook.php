@@ -180,6 +180,10 @@ if(!isset($stuff['category'])){
 		$cat=36;
 	elseif($main=='577207544603344897'.'/P7Bqf36-jL-3ltRkQZSIDPx6gST-nkv7Gaxs4nOcU_A28AIvUAb42de_fhqZ-ZgB35gs')
 		$cat=37;
+	elseif($main=='586386074008551426'.'/kHZCzeAmvxVaYAeAn3V3Ow3u9AhaWcYo3ME6IgQdRNSU28beJG5fVWhcNmJ_T58lrfQJ')
+		$cat=38;
+	elseif($main=='584601033548759072'.'/rPuQxt5SzBeRhqT9R9O1KGUkRlHWyI9JqMXCsiihCwVEbejF27ZQ2nmBu-VXkKi8QAia')
+		$cat=39;
 	elseif(strpos($contentSQL,'BC')!==false&&(strpos($contentSQL,'13')!==false||strpos(strtolower($contentSQL),'password')!==false))//ROBUXXX
 		$cat=14;
 	else$cat=0;
