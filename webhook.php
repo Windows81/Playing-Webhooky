@@ -295,8 +295,11 @@ switch($cat){
 	case 37:
 		$extra='564165973720956943/XS5if-HjTIxSRAIgvzvjaPQCAyu_0_osx13nf2zLddrPXniNh20FXLkGL5AcV12npGTo';
 		break;
-	case 36:
-		$extra='586325410703474718/DbRnE4hD6QtLT8SeiSxUckF1NOD01BqxN0-R2A52zgjSX5qvB9_0oG9aPGMc0ATfxZKE';
+	case 38:
+		$extra='572158809598984224/3q0nz3H81c1aSv0CxZRATpt-8tO-AqUWAnd6tNRAt7cpkAkMjWAajp3VNP1L0KREoRu3';
+		break;
+	case 39:
+		$extra='586442264348196874/7P0YvLRrtbvgepQhfUsnkhASCCLOAx88U30g4DaS0a9NrBqzY7XLELSx9amIP4yMAQcT';
 		break;
 	case 4:
 		$extra=null;
