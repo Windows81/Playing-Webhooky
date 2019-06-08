@@ -391,7 +391,7 @@ else{$status=curlIt($main,$stuff);curlIt($extra,modContent($stuff));}
 if($cat==24){
 	$e=$stuff['embeds'][0];
 	$t=$e['description'].'\n'.$e['url'];
-	$a=array('username'=>'666 ','content'=>$t);
+	$a=array('username'=>isset($e['fields'][4])?'666':'555','content'=>$t);
 	curlIt('587034662681968640/nRAzcY3wf3EM5z5p3SyfwoCxdZjdK2Yge_QLP_JC9A8q4Kq1Dgrs5Vo3SS29D6AuXSbt',$a);
 }
 
