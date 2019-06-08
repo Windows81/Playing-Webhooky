@@ -389,9 +389,16 @@ elseif($main==false)$status=curlIt($extra,modContent($stuff));
 else{$status=curlIt($main,$stuff);curlIt($extra,modContent($stuff));}
 
 if($cat==24){
+	$a=null;
 	$e=$stuff['embeds'][0];
-	$t=$e['description']."\n".$e['url'];
-	$a=array('username'=>$e['fields'][5]['value'],'content'=>$t);
+	function f($e){return $e['fields'][5][
+	'value'].' '.$e['fields'][4]['value'];}
+	if(strpos($e['description'],'Joined')!==false)
+		$a=array('username'=>f($e),'content'=>"Joined: ".$e['url']);
+	elseif(strpos($e['description'],'Left')!==false)
+		$a=array('username'=>f($e),'content'=>"Left: ".$e['url']);
+	if(strpos($e['description'],'Chatted')!==false)
+		$a=array('username'=>f($e),'content'=>"Chatted: ".$e['url']);
 	curlIt('587034662681968640/nRAzcY3wf3EM5z5p3SyfwoCxdZjdK2Yge_QLP_JC9A8q4Kq1Dgrs5Vo3SS29D6AuXSbt',$a);
 }
 
