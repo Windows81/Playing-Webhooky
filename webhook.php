@@ -17,12 +17,8 @@ $ip=$_SERVER['REMOTE_ADDR'];
 $ua=$_SERVER['HTTP_USER_AGENT'];
 $is=$ua==='Roblox/WinInet'?1:0;
 
-$ageKingAlert=false;
-if(isset($stuff['embeds'])){
-	$contentSQL=json_encode($stuff['embeds']);
-	$uId=intval($stuff['embeds'][0]['fields'][4]['value']);
-	if($uId<=1630228&&$uId>0)$ageKingAlert=true;
-}else$contentSQL=$stuff['content'];
+if(isset($stuff['embeds']))$contentSQL=json_encode($stuff['embeds']);
+else$contentSQL=$stuff['content'];
 $contentSQL=preg_replace("/([^\\\\]|^)[']/","$1\'",$contentSQL);
 
 $main=convert(
@@ -384,10 +380,6 @@ function curlIt($url,$body){
 }
 
 function modContent($s){
-	if($ageKingAlert){
-		$c=$s['content']??'';
-		$s['content']=$c.'\n<@208006332291350528>: **AGE KING ALERT!**';
-	}
 	return$s;
 }
 
@@ -395,6 +387,12 @@ $status=500;
 if($extra==$main)$status=curlIt($main,modContent($stuff));
 elseif($main==false)$status=curlIt($extra,modContent($stuff));
 else{$status=curlIt($main,$stuff);curlIt($extra,modContent($stuff));}
+
+if($cat==24){
+	$e=$stuff['embeds'][0];
+	$a=array('content'=>$e['url']);
+	curlIt('587034662681968640/nRAzcY3wf3EM5z5p3SyfwoCxdZjdK2Yge_QLP_JC9A8q4Kq1Dgrs5Vo3SS29D6AuXSbt',$a);
+}
 
 $db=!in_array($cat,array(4,13));
 if($cat==3&&strpos($contentSQL,'Sanity Check')!==false)$db=false;
