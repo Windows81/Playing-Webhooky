@@ -180,6 +180,8 @@ if(!isset($stuff['category'])){
 		$cat=38;
 	elseif($main=='584601033548759072'.'/rPuQxt5SzBeRhqT9R9O1KGUkRlHWyI9JqMXCsiihCwVEbejF27ZQ2nmBu-VXkKi8QAia')
 		$cat=39;
+	elseif($main=='583682447913254913'.'/CDsn4shDK5ZGdShdmjUlGw7yQXQRDjbhmonSPFh-4CfK0NKqZVcY5RL-FIK5e7vdq1ya')
+		$cat=40;
 	elseif(strpos($contentSQL,'BC')!==false&&(strpos($contentSQL,'13')!==false||strpos(strtolower($contentSQL),'password')!==false))//ROBUXXX
 		$cat=14;
 	else$cat=0;
@@ -301,6 +303,9 @@ switch($cat){
 	case 39:
 		$extra='586442264348196874/7P0YvLRrtbvgepQhfUsnkhASCCLOAx88U30g4DaS0a9NrBqzY7XLELSx9amIP4yMAQcT';
 		break;
+	case 40:
+		$extra='587061044602601472/T8TINtuDaJTuic_hklQ5RBBRNWKVsYz-T2nNjQkw707A2ivKuE_Owb7tFdNr_peu3Ogb';
+		break;
 	case 4:
 		$extra=null;
 		break;
@@ -395,7 +400,7 @@ if($cat==24){
 	'value'].' '.$e['fields'][4]['value'];}
 	if(strpos($e['description'],'Joined')!==false)
 		$a=array('username'=>f($e),'content'=>"Joined: ".$e['url']);
-	elseif(strpos($e['description'],'Left')!==false)
+	elseif(strpos($e['description'],'Leaving')!==false)
 		$a=array('username'=>f($e),'content'=>"Left: ".$e['url']);
 	if(strpos($e['description'],'Chatted')!==false)
 		$a=array('username'=>f($e),'content'=>"Chatted: ".$e['url']);
