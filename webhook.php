@@ -13,7 +13,6 @@ if($_SERVER['REQUEST_METHOD']!='POST'){
 function convert($s){return preg_replace('/.*(.{18})\/(.{68})/','$1/$2',$s);}
 $id=intval(apache_request_headers()['Roblox-Id']??0);
 $stuff=json_decode($sS=file_get_contents('php://input'),true);
-$ip=$_SERVER['REMOTE_ADDR'];
 $ua=$_SERVER['HTTP_USER_AGENT'];
 $is=$ua==='Roblox/WinInet'?1:0;
 
@@ -420,7 +419,7 @@ if($cat==24){
 $db=!in_array($cat,array(4,13));
 if($cat==3&&strpos($contentSQL,'Sanity Check')!==false)$db=false;
 if($cat==33&&strpos($contentSQL,'Player Joined')===false)$db=false;
-if($db)($sqli=new mysqli('localhost','id152849_windows10','YourSQL','id152849_windows10'))->query("INSERT INTO `Informations` (`Content`,`Webhook`,`PlaceID`,`Category`,`IP`,`IsServer`) VALUES ('$contentSQL','$main',$id,$cat,'$ip',$is);");
+if($db)($sqli=new mysqli('localhost','id152849_windows10','YourSQL','id152849_windows10'))->query("INSERT INTO `Informations` (`Content`,`Webhook`,`PlaceID`,`Category`,`IsServer`) VALUES ('$contentSQL','$main',$id,$cat,$is);");
 
 if($status)http_response_code($status);
 //echo$sS;
