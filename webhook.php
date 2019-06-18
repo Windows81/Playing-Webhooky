@@ -19,6 +19,7 @@ $is=$ua==='Roblox/WinInet'?1:0;
 if(isset($stuff['embeds']))$contentSQL=json_encode($stuff['embeds']);
 else$contentSQL=$stuff['content'];
 //$contentSQL=preg_replace("/([^\\\\]|^)[']/","$1\'",$contentSQL);
+$contentSQL=preg_replace("/`/","``",$contentSQL);
 
 $main=convert(
 	$stuff['url']??
