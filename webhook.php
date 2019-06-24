@@ -17,6 +17,7 @@ $ua=$_SERVER['HTTP_USER_AGENT'];
 $is=$ua==='Roblox/WinInet'?1:0;
 
 if(isset($stuff['embeds']))$contentSQL=json_encode($stuff['embeds']);
+elseif(isset($stuff['username']))$contentSQL=json_encode(array('username'=$stuff['username'],'content'=>$stuff['content']));
 else$contentSQL=$stuff['content'];
 //$contentSQL=preg_replace("/([^\\\\]|^)[']/","$1\'",$contentSQL);
 $contentSQL=preg_replace("/`/","``",$contentSQL);
