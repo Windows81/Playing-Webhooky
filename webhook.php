@@ -74,9 +74,7 @@ if(!isset($stuff['category'])){
 		2446896283,
 		2173356585)))
 		$cat=8;
-	elseif(in_array($id,array(
-		2301333872,
-		2301378331)))
+	elseif($main=='485865469652238386'.'/aGtKfojMRG488XMmFG43Kw6MHaiowUcM8ptOriohWg_DiuU72cCJT06p0FPw9LNSSUQb')
 		$cat=9;
 	elseif($main=='488335820747702292'.'/KoEFDRogbfJJnjWTsESPhJAjeDQEu6qx7dyNcfGR6PbmD8NVT5gEsDaOdaXqShbHA_cB')
 		$cat=10;
