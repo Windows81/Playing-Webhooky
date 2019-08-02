@@ -40,9 +40,9 @@ if(!isset($stuff['category'])){
 		452778997,
 		2800976893)))
 		$cat=4;
-	elseif($main=='421862396034809859/8JOf5tY9aC28AsVQnDskJyJbzQJu4Mo_lOk3PtdMBi5q-9h9UOKmfz_cmgcDckGNJvba')
+	elseif($main=='421862396034809859'.'/8JOf5tY9aC28AsVQnDskJyJbzQJu4Mo_lOk3PtdMBi5q-9h9UOKmfz_cmgcDckGNJvba')
 		$cat=1;
-	elseif($id==1234584644)
+	elseif($main=='475665693304553476'.'/brt8oXWTporkybYGcDom6af6DRzA4n9NoonnXKG_llcvnG8zpiuDwnq8h4YwLJ09vRKs')
 		$cat=2;
 	elseif(in_array($main,array(
 		'532316432193814548'.'/ORyumOFm2kSBbnUx0N493hNfnuxOmH670KxhXygfC9jDlblZ-Wn3qJ90EnXAKFEdzS8D',
