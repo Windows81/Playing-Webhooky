@@ -1,4 +1,5 @@
-# He's Been Playing Webhooky
+**As of 2019-09-23, Webhòóky is not currently functional on my *000webhost* server; you're still welcome to take the source code and run it on your own machine.**
+# ~He's Been Playing Webhooky~
 This repository holds the source code for a Discord webhook bypass and all related scripts.  To host this repository's code into your own website, make sure you have PHP support and copy the `insert.php` file into your server.
 
 All requests will be stored in a public backlog unless you:
