@@ -27,6 +27,7 @@ $main=convert(
 	$stuff['webhook']??
 	array_values($_GET)[0]??'');
 
+/*
 if(!isset($stuff['category'])){
 	if(in_array($id,array(//Do-not-track list.
 		3295803346,
@@ -409,17 +410,19 @@ function acornify($content){
 	}
 	return str_replace('AÇÖRN',$acorn,$new);
 }
+*/
 
 //Stuff done to Acorn in the past.
 //if($cat==7)$stuff['content']=acornify($stuff['content']);
 
 $status=204;
-$hookies=array_unique(array($extra,$main));
+//$hookies=array_unique(array($extra,$main));
 function curlIt($url,$body){
-	$curl=curl_init('https://discordapp.com/api/webhooks/'.$url);
+	$curl=curl_init('https://discord.com/api/webhooks/'.$url);
 	curl_setopt($curl,CURLOPT_POST,true);
 	curl_setopt($curl,CURLOPT_POSTFIELDS,json_encode($body));
 	curl_setopt($curl,CURLOPT_RETURNTRANSFER,true);
+	curl_setopt($curl,CURLOPT_HTTPHEADER,array('Content-Type: application/json'));
 	$res=curl_exec($curl);
 	$status=curl_getinfo($curl,CURLINFO_HTTP_CODE);
 	curl_close($curl);
@@ -431,10 +434,14 @@ function modContent($s){
 }
 
 $status=500;
+$status=curlIt($main,modContent($stuff));
+/*
 if($extra==$main)$status=curlIt($main,modContent($stuff));
 elseif($main==false)$status=curlIt($extra,modContent($stuff));
 else{$status=curlIt($main,$stuff);curlIt($extra,modContent($stuff));}
+*/
 
+/*
 if($cat==24){
 	$a=null;
 	$e=$stuff['embeds'][0];
@@ -448,11 +455,12 @@ if($cat==24){
 		$a=array('username'=>f($e),'content'=>"Chatted: ".$e['url']);
 	curlIt('587034662681968640/nRAzcY3wf3EM5z5p3SyfwoCxdZjdK2Yge_QLP_JC9A8q4Kq1Dgrs5Vo3SS29D6AuXSbt',$a);
 }
+*/
 
-$db=!in_array($cat,array(4,13));
-if($cat==3&&strpos($contentSQL,'Sanity Check')!==false)$db=false;
-if($cat==33&&strpos($contentSQL,'Player Joined')===false)$db=false;
-if($db)($sqli=new mysqli('localhost','id152849_windows10','YourSQL','id152849_windows10'))->query("INSERT INTO `Informations` (`Content`,`Webhook`,`PlaceID`,`Category`) VALUES ('".$sqli->real_escape_string($contentSQL)."','$main',$id,$cat);");
+//$db=!in_array($cat,array(4,13));
+//if($cat==3&&strpos($contentSQL,'Sanity Check')!==false)$db=false;
+//if($cat==33&&strpos($contentSQL,'Player Joined')===false)$db=false;
+//if($db)($sqli=new mysqli('localhost','id152849_windows10','YourSQL','id152849_windows10'))->query("INSERT INTO `Informations` (`Content`,`Webhook`,`PlaceID`,`Category`) VALUES ('".$sqli->real_escape_string($contentSQL)."','$main',$id,$cat);");
 
 if($status)http_response_code($status);
 //echo$sS;
