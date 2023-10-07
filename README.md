@@ -8,9 +8,13 @@ All requests will be stored in a public backlog unless you:
 
 ## Additional Links
 ### Discord Server
-http://discord.gg/3wA92n6 *(go to the **CLogger-Industries...** category).*
+~~http://discord.gg/3wA92n6 *(go to the **CLogger-Industries...** category).*~~
 ### YouTube video
-https://www.youtube.com/watch?v=uwWUtVfZxjA
+~~https://www.youtube.com/watch?v=uwWUtVfZxjA~~
+### Archived Odysee link
+https://archive.org/details/lbry-1f5182be2bfbdd807cb9502992421282f65d8744
+### Actual Odysee link
+https://odysee.com/@VisualPlugin:1/not-functional-webhook-bypass-(roblox-to:1
 ### Database access point
 [http://plumular-legend.000webhostapp.com/Dətəbäse.php](http://plumular-legend.000webhostapp.com/D%C9%99t%C9%99b%C3%A4se.php?le=WHERE%20Category=0%20ORDER%20BY%20Timestamp%20DESC%20LIMIT%200,%20666) *(if you speak SQL)*
 ### Devforum post
