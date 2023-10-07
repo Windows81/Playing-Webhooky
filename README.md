@@ -8,7 +8,7 @@ All requests will be stored in a public backlog unless you:
 
 ## Additional Links
 ### Discord Server
-~~http://discord.gg/3wA92n6 *(go to the **CLogger-Industries...** category).*~~
+http://discord.gg/3wA92n6 *(go to the **CLogger-Industries...** category).*
 ### YouTube video
 ~~https://www.youtube.com/watch?v=uwWUtVfZxjA~~
 ### Archived Odysee link
